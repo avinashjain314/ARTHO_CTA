@@ -30,8 +30,51 @@
   }
   .container { max-width: 1200px; margin: 0 auto; }
   
-  .img-header { width: 100%; border-radius: 12px; margin-bottom: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-  .img-meta { width: 100%; border-radius: 8px; margin-bottom: 25px; }
+  /* EXECUTIVE HEADER BANNER (DYNAMIC HTML/CSS) */
+  .executive-hero-header {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-bottom: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+  .executive-hero-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+  }
+  .executive-hero-subtitle {
+    font-size: 14.5px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    font-weight: 400;
+  }
+  .executive-hero-subtitle strong {
+    color: #F8FAFC;
+    font-weight: 700;
+  }
+
+  /* EXECUTIVE METADATA BAR */
+  .executive-meta-bar {
+    background: #0F172A;
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 14px 24px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .meta-item { display: flex; align-items: center; gap: 6px; }
+  .meta-label { color: var(--text-muted); font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+  .meta-val { color: #F8FAFC; font-weight: 700; }
   
   /* KPI GRID: 3-COHORT CARDS */
   .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 28px; }
@@ -156,9 +199,29 @@
 
 <div class="container">
 
-  <!-- HEADER BANNERS -->
-  <img src="file:///C:/Users/avinash.bamboria/.gemini/antigravity/brain/45e9a8f7-a747-4e6d-801e-e67c407de311/.user_uploaded/media_1793033277542_73a7ae3a.png" class="img-header" alt="Kapiva ArthoSure Header">
-  <img src="file:///C:/Users/avinash.bamboria/.gemini/antigravity/brain/45e9a8f7-a747-4e6d-801e-e67c407de311/.user_uploaded/media_1793033294369_bf2c9c62.png" class="img-meta" alt="Executive Metadata">
+  <!-- DYNAMIC EXECUTIVE HEADER -->
+  <div class="executive-hero-header">
+    <div class="executive-hero-title">Kapiva ArthoSure: Macro Tele–Sales Analysis &amp; Scaling Playbook</div>
+    <div class="executive-hero-subtitle">
+      A forensic evaluation of <strong>627 converted calls</strong> and <strong>3,838 non-converted consultations</strong> (&gt;2 min talk time), powered by <strong style="color: #38BDF8;">932 fully audited audio recordings (100% of the 627 converted calls + 305 high-intent lost calls)</strong> to decode the exact conversational, clinical, and psychological drivers of tele-sales performance.
+    </div>
+  </div>
+
+  <!-- DYNAMIC EXECUTIVE METADATA BAR -->
+  <div class="executive-meta-bar">
+    <div class="meta-item">
+      <span class="meta-label">Deep Audio Forensic Sample:</span>
+      <span class="meta-val" style="color: #38BDF8;">932 Calls Audited Verbatim (627 Converted + 305 Lost)</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Scope:</span>
+      <span class="meta-val">September 1 to October 25, 2026</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Deliverable Status:</span>
+      <span class="badge badge-green">Executive Review Ready</span>
+    </div>
+  </div>
 
   <!-- KPI HERO GRID: 3-COHORT DIRECT COMPARISON -->
   <div class="kpi-grid">
@@ -464,7 +527,7 @@
       </div>
     </div>
 
-    <!-- SCENARIO 3: PAST TREATMENT TRAUMA -->
+    <!-- SCENARIO 3: SKEPTICISM FROM PAST FAILURES -->
     <div class="rebuttal-block">
       <div class="rebuttal-title">
         <span>Scenario 3: Skepticism from Past Failures ("TV se bohot tel lagaye, sab lootne baithe hain")</span>
